@@ -10,7 +10,7 @@ int main() {
 
     for (i; i < 2; i++) {
         result[i] = ageInDays / units[i];
-        ageInDays = ageInDays - (result[i] * units[i]);
+        ageInDays = ageInDays % units[i];
     }
 
     result[i] = ageInDays;
